@@ -1,0 +1,101 @@
+% YAAC Another Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/yaac-another-awesome-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%Section: Work Experience at the top
+\sectionTitle{Experience}{\faSuitcase}
+%\renewcommand{\labelitemi}{$\bullet$}
+\begin{experiences}
+  \experience
+    {Now}   {遠傳電信 | Software Engineer}{現職}{Neihu}
+    {March 2020} {
+                      \begin{itemize}
+                        \item 透過\textbf{Golang}開發\textbf{Kubernetes Operator}部署及管理內部有狀態的服務 (POC)。
+                        \begin{enumerate}
+                        	\item 設計admission controller 驗證使用者操作行為。
+                            \item 整合Custom Resources Definition用以操作企業內部有狀態服務管理的自定義資源。
+                        \end{enumerate}
+                        \item 導入 \textbf{Infra as Code} 之工具\textbf{Terraform} ，以取代傳統在Azure Web console 操作並部署及維護\textbf{OpenShift}。           
+                        \item 整合\textbf{Gitlab CI}取代原IT手動部署與測試行為，以加快產品的迭代速度及上線之速度。                
+                        \item 協助產品開發團隊使用與導入\textbf{Kafka}、\textbf{GRPC}技術
+                        \begin{enumerate}
+                        	\item 分析 Consumer 吞吐量問題並提供相應的解決方案。
+                            \item 搭建Kafka監控畫面以利開發團隊追蹤Brocker相關性能。
+                            \item 解決Kubernetes導入GRPC負載平衡問題。
+                        \end{enumerate}
+                        \item 搭建混合雲（Azure+On-premise）部署策略與工具開發。
+                        \item 整合\textbf{Prometheus}與Grafana同時制定告警規則，將服務異常行為與狀態推播至相關負責人之通訊軟體。
+                        \item 分析現行OpenShift環境導入\textbf{Service Mesh} (Istio,Linkerd)相關問題效益以及影響範圍。
+                        
+                      \end{itemize}
+                    }
+                    {Golang, Kubernetes, Gitlab CI, OpenShift, Terraform, Kafka, Grpc}
+  \emptySeparator
+  \experience
+    {November 2019} {天坦遊戲 | Backend Developer}{兵役前}{Nangang}
+    {August 2019}    {
+                      \begin{itemize}
+                        \item 透過\textbf{Golang}撰寫後台禮券發放邏輯以及串接第三方金流。
+                        \item 透過\textbf{Golang}撰寫自動化測試腳本用以測試後台\textbf{WebSocket}相關邏輯。
+                        \item 將傳統IT人員把執行檔手動部署的方式到Server的方式透過\textbf{Container}虛擬化技術封裝，用以加速版本迭代與更新。                	
+                      \end{itemize}
+                    }
+                    {Golang, Websocket, Container, Auto Test}
+  \emptySeparator
+  \experience
+    {August  2019}     { NCTUxNUTC| Cooperation plan}{跨校合作計畫}{Taichung}
+    {December 2017}    {
+                      \begin{itemize}
+                        \item ETSI MANO 設計與開發
+                        \begin{enumerate}
+                        	\item 分析 Open Network Foundation開源專案 CORD 如何從OpenStack環境移植到Kubernetes平台。
+                        	\item 拆解CORD \textbf{Makefile}與\textbf{Ansible}安裝過程，並將元件Container化，撰寫Kubernetes Helm腳本安裝CORD基礎元件。
+                            \item 透過\textbf{Golang}撰寫Kubernetes Operator讓使用者自定義CORD相關元件以及管理服務的生命週期。
+                            \item 研究在5G Core Network場景中，電信業者自建機房如何透過CORD降低營運成本，與整合Kubernetes不足之特性。
+                             \item 使用\textbf{Golang}開發能夠介接OpenVswitch同時管理IP的Kubernetes CNI  Plugins。
+                        \end{enumerate}
+                      \end{itemize}
+                    }
+                    {Golang,Kubernetes, OpenStack}
+\emptySeparator
+\experience
+    {August  2019}     { NCTUxNUTC| Cooperation plan}{跨校合作計畫}{Taichung}
+    {December 2018}    {
+                      \begin{itemize}
+                        \item 3GPP Network Management 設計與開
+                        \begin{enumerate}
+                        	\item 分析國際電信3GPP核心網路管理平台所需文件
+                            \item 統整符合國際標準虛擬網路管理API相關文件
+                            \item 規劃系統平台所需元件以及定義相關開發流程
+                        \end{enumerate}
+                      \end{itemize}
+                    }
+                    {ETSI,3GPP,5G-Core-Network}
+\emptySeparator
+  \experience
+    {October 2017}     { inwinSTACK 迎棧科技| Intern}{暑期實習}
+    {Banqiao}
+    {June 2017}    {
+                      \begin{itemize}
+                        \item Kubernetes Integration OpenStack with kuryr project 整合
+                        \begin{enumerate}
+                        	\item 分析 OpenStack虛擬網路與Kubernetes虛擬網路異同處。
+                            \item 透過Open Vswitch整合OpenStack與Kubernetes網路將兩個叢集透過vlan與vxlan接通。
+                            \item 透過Open Flow定義規則並使用Open Vswitch達到Kubernetes 與OpenStack網路路由與轉發。
+                        \end{enumerate}
+                        \item 分析Kubernetes OpenContrail Container Network Interface
+                        \begin{enumerate}
+                        	\item 分析OpenContrail插件運行方式。
+                            \item 搭建OpenContrail CNI透過商用網路設備介接Kubernetes網路
+                        \end{enumerate}
+                      \end{itemize}
+                    }
+                    {Kubernetes, OpenStack, Open Vswitch, SDN}
+  \emptySeparator
+\end{experiences}

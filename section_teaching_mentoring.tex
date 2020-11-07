@@ -1,0 +1,53 @@
+% YAAC Another Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/darwiin/yaac-another-awesome-cv
+%
+% Author:
+% Christophe Roger
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+
+%Section: Scholarships and additional info
+\sectionTitle{Teaching and Mentoring}{\faMortarBoard}
+
+\begin{experiences}
+  \experience
+    {August 2019}   {國立台中科技大學 | Computer Science \& Information Engineering}{Master}{Taichung}
+    {Sep 2017} {
+                      \begin{itemize}
+                        \item The Study of A Containerized NFV Orchestrator Based on Kubernetes
+                        \begin{enumerate}
+                        	\item 透過\textbf{Golang}重新設計一個基於Kubernetes且符合國際標準的ETSI MANO NFV調度平台框架。 
+                        	\item 透過\textbf{Golagn}撰寫\textbf{Kubernetes Operator}使\textbf{DPDK SRIOV}等高速網路設備能夠自由掛載 Container Network Interface。
+                            \item 重新撰寫Kubernetes CNI介接OVS使得NFV能夠以軟體定義網路方式控制其網路流量與生命週期。
+                        \end{enumerate}
+                        \item ACENS Designing Custom Resource Definition Mechanism using Kubernetes for
+Virtual Network Management on the Containerized OpenStack
+                        \begin{enumerate}
+                        	\item 透過\textbf{Golang}設計一個Kubernetes Custom Controller 監控自定義的OpenStack 相關資源。
+                        	\item 設計admission controller 驗證使用者操作OpenStack行為是否合法。
+                            \item 透過Custom Resources Definition用以定義OpenStack相關資源如virtual network , virtual storage以及virtual compute等。                            
+                        \end{enumerate}
+                      \end{itemize}
+                    }
+                    {Golang, Kubernetes, OpenVswitch, ONOS, NFVO}
+  
+  \experience
+    {June 2017}   {國立台中科技大學 | Computer Science \& Information Engineering}{Bachelor}{Taichung}
+    {Sep 2013} {
+                       \begin{itemize}
+                        \item 普德家電——智慧生活飲水雲端監控系統(POC)
+                        \begin{enumerate}
+                        	\item 擔任\textbf{Backend Developer}，Backend主要由\textbf{Golang}開發主要將IOT裝置送來的資料進行彙整、重組與儲存，提供REST API給手機與前端網頁查詢，並且當資料有異常時自動發送推播給手機。
+                    	    \item 當天的熱資料儲存於\textbf{Redis Cluster}中，加快使用者對當天的熱資料的查詢。
+                    	    \item 過往歷史紀錄則存放於\textbf{Elasticsearch Cluster}進行聚合彙整並且以日期作為index。
+                        	\item 擔任\textbf{Android Developer}透過\textbf{JAVA}撰寫Android Framework 定義畫面擺放位置與相關UI呈現效果，透過REST API向後端取得當前水質狀況。
+                        	\item 當後台發出水質警告時（推播），處理推播資訊告知使用者與飲水機廠商需要更換濾芯或是其他機台設備。
+                        \end{enumerate}
+                      \end{itemize}
+                    }
+       {Golang, Java, Redis, Elasticsearch, Android}
+\emptySeparator
+\end{experiences}
