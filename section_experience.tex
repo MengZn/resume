@@ -11,9 +11,50 @@
 %Section: Work Experience at the top
 \sectionTitle{Experience}{\faSuitcase}
 %\renewcommand{\labelitemi}{$\bullet$}
+
+
+
 \begin{experiences}
+	\experience
+	{Now}   {思華科技 | Golang Engineer}{現職}{Xinyi}
+	{Jan 2021} {
+                      \begin{itemize}
+                      	\item 整合\textbf{OpenTelemetry}服務追蹤服務物行為，加快除錯流程。
+                      		\begin{enumerate}                      	
+                      			\item 由於系統微服務過多在除錯與追蹤上非常困難，因此我積極導入OpenTelemetry技術用以追蹤服務的調用練與相關的SQL操作。
+                      			\item 由於 OpenTelemetry 當前沒有完整整合 Gorm  V1 框架，另外撰寫一個 puglins  進行整合用以追蹤  Gorm hook 事件。
+                      		 \end{enumerate}
+                      	\item 調教legacy系統\textbf{Redis}慢查詢事件與 cache Avalanche等異常問題。
+	                      	\begin{enumerate}
+    	                  		\item 在legacy系統中，業務場景需要統計使用者的留存數並且交給即時凍結//tdoo
+        	              		\item 處理cache Avalanchea時整合了  proomethues  與alert manager 提供即時的告警，限縮請求湧入DB造成後續問題。
+                      		\end{enumerate}
+                      	\end{itemize}
+                     }
+                 {Golang, OpenTelemetry, Redis}
+	\emptySeparator
+	
+
+	\experience
+	{Now}   {思華科技 | Golang Engineer}{現職}{Xinyi}
+	{Jan 2021} {
+		\begin{itemize}
+			\item 導入\textbf{Skaffold}與\textbf{Kind}，加快整體開發與測試速度。
+			\begin{enumerate}                      	
+				\item 要開發新的功能到legacy系統中是一個十分繁瑣的事情，需要模擬產品線上的環境又有可能弄髒自己的開發環境，導入docker 也需要等待image build time，讓整體開發速度下降。
+				\item 因此我在導入Kind與Skaffold到每個開發者的開發流程中，修改程式碼的時候就會觸發image building ，最後部署到kind  kubernetes環境中，整體動作一氣呵成以便後續功能測試。
+			\end{enumerate}
+			\item Skaffold扔有不足靠\textbf{Telepresence}來幫忙，接入remote kubernetes環境。
+			\begin{enumerate}
+				\item 開發者透過Skaffold建置與發佈image到container registry ，並且自動化部屬到kubernetes環境，但是服務一但牽扯到的服務一多在開發端要部署的服務也跟著多了起來。
+				\item 因應上述問題，我置另外一個Kubernetes環境部署較不會變更的服務，並且導入了\textbf{Telepresence}來幫忙導引遠端流量到本地，以利開發者將遠端服務流量導流到本地進行後續功能測試與開發。
+			\end{enumerate}
+		\end{itemize}
+	}
+	{Kubernetes, Skaffold, Telepresence}
+	\emptySeparator
   \experience
-    {Now}   {遠傳電信 | Software Engineer}{現職}{Neihu}
+    {Now}   {遠傳電信 | Software Engineer}{11-months}{Neihu}
     {March 2020} {
                       \begin{itemize}
                         \item 透過\textbf{Golang}開發\textbf{Kubernetes Operator}部署及管理內部有狀態的服務 (POC)。
