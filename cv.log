@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.5.7)  7 MAY 2021 16:01
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2021.5.7)  1 JUL 2021 13:02
  restricted system commands enabled.
 **cv.tex
 (./cv.tex
@@ -1700,13 +1700,13 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31961 strings out of 478531
- 745607,1144653 words of node,token memory allocated
- 21172 words of node memory still in use:
-   4 hlist, 1 vlist, 1 rule, 3 glue, 140 kern, 1 penalty, 2 glyph, 7561 attribut
-e, 778 glue_spec, 318 attribute_list, 2 write, 165 user_defined nodes
-   avail lists: 1:8,2:231232,3:2253,4:1062,5:652,6:144,7:10218,8:49,9:3524,10:46
-,11:348
+ 31962 strings out of 478531
+ 745600,1144653 words of node,token memory allocated
+ 21495 words of node memory still in use:
+   4 hlist, 1 vlist, 1 rule, 3 glue, 142 kern, 1 penalty, 2 glyph, 7657 attribut
+e, 799 glue_spec, 322 attribute_list, 2 write, 167 user_defined nodes
+   avail lists: 1:10,2:247125,3:2377,4:1156,5:662,6:148,7:11234,8:47,9:3892,10:4
+6,11:369
  50512 multiletter control sequences out of 65536+600000
  76 fonts using 112211871 bytes
  128i,12n,123p,1190b,1023s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1714,10 +1714,10 @@ e, 778 glue_spec, 318 attribute_list, 2 write, 165 user_defined nodes
 al/Songti.ttc></usr/local/texlive/2021/texmf-dist/fonts/opentype/public/fontawes
 ome/FontAwesome.otf><./fonts/SourceSansPro-Regular.otf><./fonts/SourceSansPro-Li
 ght.otf>
-Output written on cv.pdf (5 pages, 489206 bytes).
+Output written on cv.pdf (5 pages, 489901 bytes).
 
-PDF statistics: 136 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 131072)
+PDF statistics: 137 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 131072)
  56 words of extra memory for PDF output out of 10000 (max. 100000000)
 
