@@ -22,7 +22,7 @@
                       	\item 整合\textbf{OpenTelemetry}服務追蹤服務物行為，加快除錯流程。
                       		\begin{enumerate}                      	
                       			\item 由於系統微服務過多在除錯與追蹤上非常困難，因此我積極導入OpenTelemetry技術用以追蹤服務的調用練與相關的SQL操作。
-                      			\item 由於 OpenTelemetry 當前沒有完整整合 Gorm  V1 框架，另外撰寫一個 puglins  進行整合用以追蹤  Gorm hook 事件。
+                      			\item 由於 OpenTelemetry 當前沒有完整整合 Gorm  V1 框架，另外撰寫一個 plugins  進行整合用以追蹤  Gorm hook 事件。
                       		 \end{enumerate}
                       	\item 調教legacy系統\textbf{Redis}慢查詢事件與 cache Avalanche等異常問題。
 	                      	\begin{enumerate}
@@ -40,25 +40,25 @@
 		\begin{itemize}
 			\item 導入\textbf{Skaffold}與\textbf{Kind}，加快整體開發與測試速度。
 			\begin{enumerate}                      	
-				\item 要開發新的功能到legacy系統中是一個十分繁瑣的事情，需要模擬產品線上的環境又有可能弄髒自己的開發環境，導入docker 也需要等待image build time，讓整體開發速度下降。
-				\item 因此我在導入Kind與Skaffold到每個開發者的開發流程中，修改程式碼的時候就會觸發image building ，最後部署到kind  kubernetes環境中，整體動作一氣呵成以便後續功能測試。
+				\item 要開發新的功能到legacy系統中是一個十分繁瑣的事情，需要模擬產品線上的環境又有可能弄髒自己的開發環境，導入docker也需要等待image build time，讓整體開發速度下降。
+				\item 因此我在導入Kind與Skaffold到每個開發者的開發流程中，修改程式碼的時候就會觸發image building ，最後部署到本地的kind  kubernetes環境中，整體動作一氣呵成以便後續功能測試。
 			\end{enumerate}
 			\item Skaffold扔有不足靠\textbf{Telepresence}來幫忙，接入remote kubernetes環境。
 			\begin{enumerate}
-				\item 開發者透過Skaffold建置與發佈image到container registry ，並且自動化部屬到kubernetes環境，但是服務一但牽扯到的服務一多在開發端要部署的服務也跟著多了起來。
-				\item 因應上述問題，我置另外一個Kubernetes環境部署較不會變更的服務，並且導入了\textbf{Telepresence}來幫忙導引遠端流量到本地，以利開發者將遠端服務流量導流到本地進行後續功能測試與開發。
+				\item 開發者雖然能夠透過 Skaffold 建置與發佈image到container registry ，並且自動化部屬到本地的kubernetes環境，但這僅能模擬遠端環境無法將遠端發生的事件導流到本地來。
+				\item 因應上述問題，我在Kubernetes環境部署了\textbf{Telepresence}，並且在開發者環境導入了\textbf{Telepresence}來幫忙導引遠端流量到本地，利開發者可以將遠端服務流量導流到本地進行部分功能測試與hot fix修正。
 			\end{enumerate}
-			\item <POC> 基於 AWS step function 與\textbf{Skaffold}與\textbf{Kind}，加快整體開發與測試速度。
+			\item <POC> 研究基於AWS step function與\textbf{Argo Workflow}與\textbf{Knative}，打造免錢的step function。
 			\begin{enumerate}                      	
-				\item 要開發新的功能到legacy系統中是一個十分繁瑣的事情，需要模擬產品線上的環境又有可能弄髒自己的開發環境，導入docker 也需要等待image build time，讓整體開發速度下降。
-				\item 因此我在導入Kind與Skaffold到每個開發者的開發流程中，修改程式碼的時候就會觸發image building ，最後部署到kind  kubernetes環境中，整體動作一氣呵成以便後續功能測試。
+				\item 由於Aws step function使用上計價非常昂貴，目前開源的專案有提供類似step function的功能但無法架設在kubernetes並且無法以流量或其他策略策略部署與執行containerized step function。
+				\item 因此為了應對此項需求，我研究了\textbf{Argo Workflow}一種在kubernetes上執行以DAG策略執行並回傳結果的開源軟體與\textbf{Knative}一種能以流量啟動服務的開源軟體，嘗試將兩種結合打造免錢的step function。
 			\end{enumerate}
 		\end{itemize}
 	}
 	{Kubernetes, Skaffold, Telepresence, Golang, Argo Workflow, Knative}
 	\emptySeparator
   \experience
-    {Now}   {遠傳電信 | Software Engineer}{11-months}{Neihu}
+    {Jan 2021}   {遠傳電信 | Software Engineer}{1 Year}{Neihu}
     {Jan 2020} {
                       \begin{itemize}
                         \item 透過\textbf{Golang}開發\textbf{Kubernetes Operator}部署及管理內部有狀態的服務 (POC)。
@@ -83,7 +83,7 @@
                     {Golang, Kubernetes, Gitlab CI, OpenShift, Terraform, Kafka, Grpc}
   \emptySeparator
   \experience
-    {November 2019} {天坦遊戲 | Backend Developer}{兵役前}{Nangang}
+    {November 2019} {鈦坦科技 | Backend Developer}{4 Months,兵役前}{Nangang}
     {August 2019}    {
                       \begin{itemize}
                         \item 透過\textbf{Golang}撰寫後台禮券發放邏輯以及串接第三方金流。
